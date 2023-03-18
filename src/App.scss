@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.App {
+  display: grid;
+  background-color: #eee;
+}
+
+.drag-drop-area {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  clip-path: circle(50%);
+
+  .input {
+    place-self: center;
+    width: 5rem;
+  }
+  .uploadBtn {
+    place-self: center;
+    font-size: 2rem;
+    padding: 1em;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+}
+
+.img-container {
+  background-color: #c8e6e3;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  .img-div {
+    max-width: 90%;
+    margin-inline: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+}
